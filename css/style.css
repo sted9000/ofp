@@ -1,0 +1,210 @@
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: black;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 1; }
+
+.cross {
+  display: none;
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: black;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 1; }
+
+.nav-menu {
+  z-index: 1;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f5f5f5;
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  width: 150px;
+  text-align: center;
+  display: none;
+  border-radius: 1em; }
+  .nav-menu a {
+    text-decoration: none;
+    color: black; }
+  .nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
+    .nav-menu ul li {
+      display: block;
+      padding: 15px 0 15px 0; }
+      .nav-menu ul li:hover {
+        display: block;
+        background: #ffffff;
+        padding: 15px 0 15px 0; }
+
+#title-container {
+  text-align: center; }
+  #title-container #header-title {
+    margin: 50px auto 0; }
+  #title-container #header-subtitle {
+    margin: 5px auto 0; }
+
+footer {
+  clear: both;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center; }
+  footer #copyright-container {
+    margin-top: 30px; }
+    footer #copyright-container a {
+      text-decoration: none;
+      color: grey; }
+
+a {
+  text-decoration: none;
+  /* Removes the underline from the hyperlinked text */ }
+
+.gallery-container {
+  /* <#> are used for html id tags */
+  max-width: 800px;
+  /* maximum width for this element */
+  margin: 0 auto;
+  /* space outside the order */
+  padding: 0 5%;
+  /* space between the content and the border */ }
+
+.section-title {
+  margin-top: 40px; }
+  .section-title a {
+    color: black; }
+    .section-title a:hover {
+      color: grey; }
+  .section-title h3 {
+    text-align: center;
+    margin-bottom: 10px; }
+
+img {
+  max-width: 100%;
+  /* This is useful for scaling to browser (think mobile) */
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px; }
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Removes bullets from lists */ }
+
+#gallery li {
+  float: left;
+  /* Anchors of left side of element */
+  width: 27.5%;
+  /* Really 28.3333%, but subtracted some for the border */
+  margin: 0 2.5%;
+  /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
+  background-color: #f5f5f5;
+  border-style: solid;
+  border-radius: 1em;
+  max-height: 150px; }
+  #gallery li:hover {
+    background-color: white;
+    border-radius: 2em; }
+
+#gallery li a p {
+  /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+  margin: 0;
+  padding: 5%;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  /* Removes the underline from the hyperlinked text */
+  max-width: 100%; }
+
+#gallery li:nth-child(4n) {
+  /* sudo class where we are clearing every forth list item */
+  clear: left; }
+
+.clear-float-div {
+  clear: both; }
+
+.list-container {
+  margin: 50px 2.5% 0;
+  width: 50%;
+  border-style: solid; }
+  .list-container .section-title {
+    margin: 0; }
+
+#list li {
+  margin: 10px; }
+
+#list li a p {
+  /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+  color: black;
+  margin: 0;
+  text-decoration: none;
+  /* Removes the underline from the hyperlinked text */ }
+  #list li a p:hover {
+    color: grey; }
+
+#introduction-container {
+  margin-top: 50px;
+  text-align: center; }
+  #introduction-container p {
+    margin-top: 5px; }
+  #introduction-container #button-container button {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 1em; }
+    #introduction-container #button-container button:hover {
+      background-color: white;
+      color: black; }
+  #introduction-container #intro-text-container {
+    text-align: center;
+    display: none;
+    max-width: 40%;
+    margin: 0 auto;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 10px; }
+    #introduction-container #intro-text-container button {
+      background-color: grey;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-style: solid;
+      border-radius: 1em;
+      width: 50%;
+      float: left; }
+      #introduction-container #intro-text-container button:hover {
+        background-color: white;
+        color: grey; }
+
+/*# sourceMappingURL=style.css.map */

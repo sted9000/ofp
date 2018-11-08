@@ -1,0 +1,162 @@
+a {
+	text-decoration: none; /* Removes the underline from the hyperlinked text */
+}
+
+.gallery-container { /* <#> are used for html id tags */
+	max-width: 800px; /* maximum width for this element */
+	margin: 0 auto; /* space outside the order */
+	padding: 0 5%; /* space between the content and the border */
+}
+
+.section-title {
+	margin-top: 40px;
+
+	a {
+		color: black;
+		&:hover {
+			color: grey;
+		}
+	}
+
+
+	h3 {
+		text-align: center;
+		// margin-top: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+img {
+	max-width: 100%; /* This is useful for scaling to browser (think mobile) */
+	max-height: 100px;
+    display: block;
+    margin: 0 auto;
+	padding-top: 10px;
+	}
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none; /* Removes bullets from lists */
+}
+
+#gallery li {
+	float: left; /* Anchors of left side of element */
+	width: 27.5%; /* Really 28.3333%, but subtracted some for the border */
+	margin: 0 2.5%; /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
+	background-color: #f5f5f5;
+	border-style: solid;
+	border-radius: 1em;
+	max-height: 150px;
+
+	&:hover {
+		background-color: white;
+		border-radius: 2em;
+	}
+}
+
+#gallery li a p { /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+	margin: 0;
+	padding: 5%;
+	color: black;
+    text-align: center;
+	text-decoration: none; /* Removes the underline from the hyperlinked text */
+	max-width: 100%;
+}
+
+
+#gallery li:nth-child(4n) { /* sudo class where we are clearing every forth list item */
+    clear: left;
+}
+
+.clear-float-div {
+	clear: both;
+}
+
+
+.list-container {
+	margin: 50px 2.5% 0;
+	width: 50%;
+	border-style: solid;
+
+	.section-title {
+		margin: 0;
+	}
+}
+
+
+#list li {
+	margin: 10px;
+}
+
+#list li a p { /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+	color: black;
+	margin: 0;
+	text-decoration: none; /* Removes the underline from the hyperlinked text */
+
+	&:hover {
+		color: grey;
+
+	}
+
+}
+
+#introduction-container {
+	margin-top: 50px;
+	text-align: center;
+
+	p {
+		margin-top: 5px;
+	}
+
+	#button-container button {
+	    background-color: black;
+	    border: none;
+	    color: white;
+		margin-bottom: 10px;
+	    padding: 15px 25px;
+	    text-align: center;
+	    font-size: 16px;
+	    cursor: pointer;
+		border-style: solid;
+		border-radius: 1em;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+
+	#intro-text-container {
+		text-align: center;
+		display: none;
+		max-width: 40%;
+		margin: 0 auto;
+		border-style: solid;
+		border-radius: 1em;
+		padding: 10px;
+
+
+		button {
+			background-color: grey;
+		    border: none;
+		    color: white;
+		    padding: 10px;
+		    text-align: center;
+		    font-size: 16px;
+		    cursor: pointer;
+			border-style: solid;
+			border-radius: 1em;
+			width: 50%;
+			float: left;
+
+
+			&:hover {
+				background-color: white;
+				color: grey;
+			}
+		}
+	}
+}
