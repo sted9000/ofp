@@ -1,0 +1,75 @@
+// Container for site content .......................
+#content {
+	margin-top: 50px;
+}
+
+// Default button format ...........................
+button {
+    border-radius: 1em;
+}
+
+// Galleries
+.gallery-container { /* <#> are used for html id tags */
+	max-width: 800px; /* maximum width for this element */
+	margin: 40px auto 0; /* space outside the order */
+	padding: 0 5%; /* space between the content and the border */
+
+    .gallery-title {
+    	a {
+    		color: black;
+    		&:hover {
+    			color: grey;
+    		}
+    	}
+
+    	h3 {
+    		text-align: center;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    img {
+    	max-width: 100%; /* This is useful for scaling to browser (think mobile) */
+    	max-height: 100px;
+        display: block;
+        margin: 0 auto;
+    	padding-top: 10px;
+    	}
+
+    .gallery {
+    	margin: 0;
+    	padding: 0;
+    	list-style: none; /* Removes bullets from lists */
+    }
+
+    .gallery li {
+    	float: left; /* Anchors of left side of element */
+    	width: 27.5%; /* Really 28.3333%, but subtracted some for the border */
+    	margin: 0 2.5%; /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
+    	background-color: #f5f5f5;
+    	border-style: solid;
+    	border-radius: 1em;
+    	max-height: 150px;
+
+    	&:hover {
+    		background-color: white;
+    		border-radius: 2em;
+    	}
+
+        a p { /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 0;
+        	padding: 5%;
+        	color: black;
+            text-align: center;
+        	text-decoration: none; /* Removes the underline from the hyperlinked text */
+        	max-width: 100%;
+        }
+    }
+
+    .gallery li:nth-child(4n) { /* sudo class where we are clearing every forth list item */
+        clear: left;
+    }
+}

@@ -1,3 +1,35 @@
+html, body {
+  font-family: 'Merriweather', serif;
+  height: 100%;
+  margin: 0; }
+
+.content-outside {
+  min-height: 100%; }
+
+.content-inside {
+  padding: 20px;
+  padding-bottom: 100px; }
+
+.clear-float-div {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  /* Removes the underline from the hyperlinked text */ }
+
+button {
+  font-family: 'Merriweather', serif;
+  cursor: pointer; }
+  button:focus {
+    outline: 0; }
+
+#title-container {
+  text-align: center; }
+  #title-container #header-title {
+    margin: 50px auto 0; }
+  #title-container #header-subtitle {
+    margin: 5px auto 0; }
+
 .hamburger {
   background: none;
   position: absolute;
@@ -58,153 +90,112 @@
         background: #ffffff;
         padding: 15px 0 15px 0; }
 
-#title-container {
-  text-align: center; }
-  #title-container #header-title {
-    margin: 50px auto 0; }
-  #title-container #header-subtitle {
-    margin: 5px auto 0; }
+.dropdown-container {
+  text-align: center;
+  margin-top: 10px; }
+  .dropdown-container .dropdown-button {
+    width: 400px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em; }
+    .dropdown-container .dropdown-button:hover {
+      background-color: white;
+      color: black; }
+  .dropdown-container .dropdown-content-container {
+    display: none;
+    max-width: 400px;
+    margin: 5px auto 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1em; }
+    .dropdown-container .dropdown-content-container p {
+      padding: 10px;
+      margin: 0px; }
+    .dropdown-container .dropdown-content-container .float-button {
+      background-color: #d9d9d9;
+      color: black;
+      padding: 10px;
+      border-radius: 1em;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      border-width: 0;
+      float: left;
+      width: 45%;
+      margin: 2.5%; }
+      .dropdown-container .dropdown-content-container .float-button:hover {
+        background-color: white;
+        color: black; }
 
 footer {
-  clear: both;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  height: 50px;
+  margin-top: -50px;
   text-align: center; }
-  footer #copyright-container {
-    margin-top: 30px; }
-    footer #copyright-container a {
-      text-decoration: none;
-      color: grey; }
+  footer a {
+    text-decoration: none;
+    color: grey; }
 
-a {
-  text-decoration: none;
-  /* Removes the underline from the hyperlinked text */ }
+#content {
+  margin-top: 50px; }
+
+button {
+  border-radius: 1em; }
 
 .gallery-container {
   /* <#> are used for html id tags */
   max-width: 800px;
   /* maximum width for this element */
-  margin: 0 auto;
+  margin: 40px auto 0;
   /* space outside the order */
   padding: 0 5%;
   /* space between the content and the border */ }
-
-.section-title {
-  margin-top: 40px; }
-  .section-title a {
+  .gallery-container .gallery-title a {
     color: black; }
-    .section-title a:hover {
+    .gallery-container .gallery-title a:hover {
       color: grey; }
-  .section-title h3 {
+  .gallery-container .gallery-title h3 {
     text-align: center;
     margin-bottom: 10px; }
-
-img {
-  max-width: 100%;
-  /* This is useful for scaling to browser (think mobile) */
-  max-height: 100px;
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px; }
-
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  /* Removes bullets from lists */ }
-
-#gallery li {
-  float: left;
-  /* Anchors of left side of element */
-  width: 27.5%;
-  /* Really 28.3333%, but subtracted some for the border */
-  margin: 0 2.5%;
-  /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
-  background-color: #f5f5f5;
-  border-style: solid;
-  border-radius: 1em;
-  max-height: 150px; }
-  #gallery li:hover {
-    background-color: white;
-    border-radius: 2em; }
-
-#gallery li a p {
-  /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
-  margin: 0;
-  padding: 5%;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  /* Removes the underline from the hyperlinked text */
-  max-width: 100%; }
-
-#gallery li:nth-child(4n) {
-  /* sudo class where we are clearing every forth list item */
-  clear: left; }
-
-.clear-float-div {
-  clear: both; }
-
-.list-container {
-  margin: 50px 2.5% 0;
-  width: 50%;
-  border-style: solid; }
-  .list-container .section-title {
-    margin: 0; }
-
-#list li {
-  margin: 10px; }
-
-#list li a p {
-  /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
-  color: black;
-  margin: 0;
-  text-decoration: none;
-  /* Removes the underline from the hyperlinked text */ }
-  #list li a p:hover {
-    color: grey; }
-
-#introduction-container {
-  margin-top: 50px;
-  text-align: center; }
-  #introduction-container p {
-    margin-top: 5px; }
-  #introduction-container #button-container button {
-    background-color: black;
-    border: none;
-    color: white;
-    margin-bottom: 10px;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-style: solid;
-    border-radius: 1em; }
-    #introduction-container #button-container button:hover {
-      background-color: white;
-      color: black; }
-  #introduction-container #intro-text-container {
-    text-align: center;
-    display: none;
-    max-width: 40%;
+  .gallery-container img {
+    max-width: 100%;
+    /* This is useful for scaling to browser (think mobile) */
+    max-height: 100px;
+    display: block;
     margin: 0 auto;
+    padding-top: 10px; }
+  .gallery-container .gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Removes bullets from lists */ }
+  .gallery-container .gallery li {
+    float: left;
+    /* Anchors of left side of element */
+    width: 27.5%;
+    /* Really 28.3333%, but subtracted some for the border */
+    margin: 0 2.5%;
+    /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
+    background-color: #f5f5f5;
     border-style: solid;
     border-radius: 1em;
-    padding: 10px; }
-    #introduction-container #intro-text-container button {
-      background-color: grey;
-      border: none;
-      color: white;
-      padding: 10px;
+    max-height: 150px; }
+    .gallery-container .gallery li:hover {
+      background-color: white;
+      border-radius: 2em; }
+    .gallery-container .gallery li a p {
+      /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin: 0;
+      padding: 5%;
+      color: black;
       text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-      border-style: solid;
-      border-radius: 1em;
-      width: 50%;
-      float: left; }
-      #introduction-container #intro-text-container button:hover {
-        background-color: white;
-        color: grey; }
+      text-decoration: none;
+      /* Removes the underline from the hyperlinked text */
+      max-width: 100%; }
+  .gallery-container .gallery li:nth-child(4n) {
+    /* sudo class where we are clearing every forth list item */
+    clear: left; }
 
 /*# sourceMappingURL=style.css.map */

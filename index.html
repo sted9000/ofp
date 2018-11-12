@@ -4,159 +4,137 @@
         <meta charset="utf-8">
         <title>OpenFreeroll</title>
         <link rel="stylesheet" href="/ofp/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <script src="/ofp/scripts/jquery-3.3.1.min.js"></script>
     </head>
+
     <body>
 
-        <header id="site-header">
-            <button class="hamburger">&#9776;</button>
-            <button class="cross">&#735;</button>
+        <!-- Divs to wrap content for sticky footer format -->
+        <div class="content-outside">
+            <div class="content-inside">
 
-            <div class="nav-menu">
-                <ul>
-                    <a href="https://freeroll.io/" target="_blank"><li>Home</li></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Projects</li></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Blog</li></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Resources</li></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>About</li></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Contact</li></a>
-                </ul>
-            </div>
+                <!-- Header ......................................................... -->
+                <header id="site-header">
 
-            <script type="text/javascript">
-                $(".hamburger").click(function() {
-                    $( ".nav-menu" ).slideToggle( "slow", function() {
-                        $( ".hamburger" ).hide();
-                        $( ".cross" ).show();
-                    });
-                });
-                $(".cross").click(function() {
-                    $( ".nav-menu" ).slideToggle( "slow", function() {
-                        $( ".cross" ).hide();
-                        $( ".hamburger" ).show();
-                    });
-                });
-            </script>
-
-            <div id="title-container">
-                <h1 id="header-title">Open Freeroll Project</h1>
-                <h4 id="header-subtitle">Simple systems for personal wisdom using blockchains.</h4>
-            </div>
-
-
-        </header>
-
-        <div id="content">
-
-            <div id="introduction-container">
-
-                <div id="button-container">
-                    <button id="intro-button">Short Introduction</button>
-                </div>
-
-                <div id="intro-text-container">
-                    <p>
-                    Today we face new challenges preventing us from acting wisely. We also have new unexplored tools to help us overcome these challenges. Open Freeroll Project is aimed at matching challenges with the proper tools to help us act wisely.
-                    </p>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><button id="read-more-button">Read More</button></a>
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><button id="guide-button">Getting Started Guide</button></a>
-
-                    <div class="clear-float-div">
-
-                    </div>
-
-                </div>
-                <script type="text/javascript">
-                    $("#button-container").click(function() {
-                        $("#intro-text-container").slideToggle("slow");
-
-                        if ($("#intro-button").text() == 'Short Introduction') {
-                            $("#intro-button").text("Close Introduction");
-                        } else {
-                            $("#intro-button").text("Short Introduction");
-                        }
-                    });
-                </script>
-            </div>
-
-            <div class="gallery-container">
-
-                <div class="section-title">
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><h3>Projects</h3></a>
-                </div>
-                <section>
-                    <ul id="gallery">
-                        <li>
-                            <a href="https://sted9000.github.io/uncomfortablechallenge/" target="_blank">
-                                <img src="/ofp/images/pin.png" alt="">
-                                <p>UncomfortableChallenge</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://freeroll.io">
-                                <img src="/ofp/images/f.png" alt="">
-                                <p>Freerollio</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sted9000.github.io/habitbuilder/">
-                                <img src="/ofp/images/wrench.png" alt="">
-                                <p>Habit Builder</p>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="clear-float-div"></div>
-
-            <div class="gallery-container">
-
-                <div class="section-title">
-                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><h3>Blog</h3></a>
-                </div>
-                <section>
-                    <ul id="gallery">
-                        <li>
-                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing">
-                                <img src="/ofp/images/data_transfer.png" alt="">
-                                <p>The Oracle Problem</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </section>
-            </div>
-            <div class="clear-float-div"></div>
-
-            <div class="gallery-container">
-
-
-                <!-- <div class="list-container">
-
-                    <div class="section-title">
-                        <h3>Resources</h3>
-                    </div>
-                    <section>
-                        <ul id="list">
-                            <li>
-                                <a href="https://realit.io/" target="_blank"><p>Realitio (a game theory oracle)</p></a>
-                            </li>
-                            <li>
-                                <a href="https://oraclize.it/" target="_blank"><p>Oraclize (a secure api oracle)</p></a>
-                            </li>
+                    <!-- Nav menu -->
+                    <button class="hamburger">&#9776;</button>
+                    <button class="cross">&#735;</button>
+                    <div class="nav-menu">
+                        <ul>
+                            <a href="https://freeroll.io/" target="_blank"><li>Home</li></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Projects</li></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Blog</li></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Resources</li></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>About</li></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing" target="_blank"><li>Contact</li></a>
                         </ul>
-                    </section>
-                </div>
-                <div class="clear-float-div"></div>  -->
-            </div>
-        </div> <!-- End of content -->
+                    </div>
+                    <script type="text/javascript">
+                        $(".hamburger").click(function() {
+                            $( ".nav-menu" ).slideToggle( "slow", function() {
+                                $( ".hamburger" ).hide();
+                                $( ".cross" ).show();
+                            });
+                        });
+                        $(".cross").click(function() {
+                            $( ".nav-menu" ).slideToggle( "slow", function() {
+                                $( ".cross" ).hide();
+                                $( ".hamburger" ).show();
+                            });
+                        });
+                    </script>
+
+                    <!-- Title, subtitle, and quote -->
+                    <div id="title-container">
+                        <h1 id="header-title">Open Freeroll Project</h1>
+                        <h4 id="header-subtitle">Simple systems for personal wisdom using blockchains.</h4>
+                    </div>
+                </header> <!-- End Header .....................................-->
+
+                <!-- Page content .................................................. -->
+                <div id="content">
+
+                    <!-- Introduction Button and Content -->
+                    <div class="dropdown-container">
+                        <div id="button-container">
+                            <button class="dropdown-button" id="intro-button">Short Introduction</button>
+                        </div>
+
+                        <div class="dropdown-content-container" id="intro-text-container">
+                            <p>Today we face new challenges preventing us from acting wisely. We also have new unexplored tools to help us overcome these challenges. Open Freeroll Project is aimed at matching challenges with the proper tools to help us act wisely.</p>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><button id="read-more-button" class="float-button">Read More</button></a>
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><button id="guide-button" class="float-button">Getting Started Guide</button></a>
+                            <div class="clear-float-div"></div>
+                        </div>
+                        <script type="text/javascript">
+                            $("#intro-button").click(function() {
+                                $("#intro-text-container").slideToggle("slow");
+
+                                if ($("#intro-button").text() == 'Short Introduction') {
+                                    $("#intro-button").text("Close Introduction");
+                                } else {
+                                    $("#intro-button").text("Short Introduction");
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    <!-- Galleries -->
+                    <div id="projects-container" class="gallery-container">
+                        <div class="gallery-title">
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><h3>Projects</h3></a>
+                        </div>
+                        <section>
+                            <ul class="gallery">
+                                <li>
+                                    <a href="https://sted9000.github.io/uncomfortablechallenge/" target="_blank">
+                                        <img src="/ofp/images/pin.png" alt="">
+                                        <p>UncomfortableChallenge</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://freeroll.io">
+                                        <img src="/ofp/images/f.png" alt="">
+                                        <p>Freerollio</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sted9000.github.io/habitbuilder/">
+                                        <img src="/ofp/images/wrench.png" alt="">
+                                        <p>Habit Builder</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="clear-float-div"></div>
+
+                    <div id="blog-container" class="gallery-container">
+                        <div class="gallery-title">
+                            <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing"><h3>Blog</h3></a>
+                        </div>
+                        <section>
+                            <ul class="gallery">
+                                <li>
+                                    <a href="https://docs.google.com/document/d/1LC4iEhv-UvId96dd5hIZqdwVwjt9yxU2jxpmKqH4kfA/edit?usp=sharing">
+                                        <img src="/ofp/images/play.png" alt="">
+                                        <p>Initial Ideas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="clear-float-div"></div>
+
+                </div> <!-- End of content -->
+            </div> <!-- End of content-inside -->
+        </div> <!-- End of content-outside -->
 
         <footer>
             <div id="copyright-container">
                 <a href="http://www.tedslocum.com">&copy sted9000</a>
             </div>
-
         </footer>
 
     </body>

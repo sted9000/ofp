@@ -1,162 +1,200 @@
+// This is contains all the shared formatting for the Open Freeroll Project
+// ...suite of sites
+
+
+// This formating is for the sticky footer .....................................
+html, body {
+font-family: 'Merriweather', serif;
+  height: 100%;
+  margin: 0;
+}
+.content-outside {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+// Defaults ........................................
+.clear-float-div {
+    clear: both;
+}
 a {
 	text-decoration: none; /* Removes the underline from the hyperlinked text */
 }
-
-.gallery-container { /* <#> are used for html id tags */
-	max-width: 800px; /* maximum width for this element */
-	margin: 0 auto; /* space outside the order */
-	padding: 0 5%; /* space between the content and the border */
+button {
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
 }
 
-.section-title {
-	margin-top: 40px;
+// Colors ..................................................
+$grey-btn: #d9d9d9;
 
-	a {
-		color: black;
-		&:hover {
-			color: grey;
-		}
-	}
-
-
-	h3 {
-		text-align: center;
-		// margin-top: 20px;
-		margin-bottom: 10px;
-	}
+// Mixins ....................................................
+@mixin tooltiptext {
+    white-space: pre;
+    font-size: .8em;
+    visibility: hidden;
+    bottom: 105%;
+    background-color: white;
+    border-radius: 6px;
+    border-width: medium;
+    border-style: solid;
+    border-color: black;
+    margin-left: 0px;
+    padding: 10px;
+    position: absolute; /* Position the tooltip ***Important***/
 }
 
-
-
-img {
-	max-width: 100%; /* This is useful for scaling to browser (think mobile) */
-	max-height: 100px;
-    display: block;
-    margin: 0 auto;
-	padding-top: 10px;
-	}
-
-#gallery {
-	margin: 0;
-	padding: 0;
-	list-style: none; /* Removes bullets from lists */
-}
-
-#gallery li {
-	float: left; /* Anchors of left side of element */
-	width: 27.5%; /* Really 28.3333%, but subtracted some for the border */
-	margin: 0 2.5%; /* 45 * 2 = 90 and then we have four margins at 2.5% to equal 100 */
-	background-color: #f5f5f5;
-	border-style: solid;
-	border-radius: 1em;
-	max-height: 150px;
-
-	&:hover {
-		background-color: white;
-		border-radius: 2em;
-	}
-}
-
-#gallery li a p { /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
-	margin: 0;
-	padding: 5%;
-	color: black;
+// Header .........................................
+#title-container {
     text-align: center;
-	text-decoration: none; /* Removes the underline from the hyperlinked text */
-	max-width: 100%;
+
+    #header-title {
+        margin: 50px auto 0;
+    }
+
+    #header-subtitle {
+        margin: 5px auto 0;
+    }
 }
 
-
-#gallery li:nth-child(4n) { /* sudo class where we are clearing every forth list item */
-    clear: left;
+// Nav ..............................................
+.hamburger {
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color: black;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:1;
 }
 
-.clear-float-div {
-	clear: both;
+.cross {
+    display: none;
+    background:none;
+    position:absolute;
+    top:0px;
+    right:0;
+    padding:7px 15px 0px 15px;
+    color:black;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:1;
 }
 
+.nav-menu {
+    z-index:1;
+    font-weight:bold;
+    font-size:0.8em;
+    width:100%;
+    background:#f5f5f5;
+    position:absolute;
+    top: 0px;
+    right: 40px;
+    width: 150px;
+    text-align:center;
+    display: none;
+    border-radius: 1em;
 
-.list-container {
-	margin: 50px 2.5% 0;
-	width: 50%;
-	border-style: solid;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-	.section-title {
-		margin: 0;
-	}
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+
+
+        li {
+            display: block;
+            padding:15px 0 15px 0;
+
+            &:hover {
+                display: block;
+                background:#ffffff;
+                padding:15px 0 15px 0;
+                // border-bottom:#dddddd 1px solid;
+            }
+        }
+    }
 }
 
-
-#list li {
-	margin: 10px;
-}
-
-#list li a p { /* This notative means: the <p> tag nested in an <a> tag, nested in a <li> list item, inside the gallery id tag. */
-	color: black;
-	margin: 0;
-	text-decoration: none; /* Removes the underline from the hyperlinked text */
-
-	&:hover {
-		color: grey;
-
-	}
-
-}
-
-#introduction-container {
-	margin-top: 50px;
+// Introduction / Dropdown Div and Button ......................................
+.dropdown-container {
 	text-align: center;
+    margin-top: 10px;
 
-	p {
-		margin-top: 5px;
-	}
+    .dropdown-button {
+        width: 400px;
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 25px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+        font-size: 1.1em;
 
-	#button-container button {
-	    background-color: black;
-	    border: none;
-	    color: white;
-		margin-bottom: 10px;
-	    padding: 15px 25px;
-	    text-align: center;
-	    font-size: 16px;
-	    cursor: pointer;
-		border-style: solid;
-		border-radius: 1em;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
 
-		&:hover {
-			background-color: white;
-			color: black;
-		}
-	}
+    .dropdown-content-container {
+        display: none;
+        max-width: 400px;
+        margin: 5px auto 5px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+        border-radius: 1em;
 
-	#intro-text-container {
-		text-align: center;
-		display: none;
-		max-width: 40%;
-		margin: 0 auto;
-		border-style: solid;
-		border-radius: 1em;
-		padding: 10px;
+        p {
+            padding: 10px;
+            margin: 0px;
+        }
 
+        .float-button {
+            background-color: $grey-btn;
+            color: black;
+            padding: 10px;
+            border-radius: 1em;
+            box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+            border-width: 0;
+            float: left;
+            width: 45%;
+            margin: 2.5%;
 
-		button {
-			background-color: grey;
-		    border: none;
-		    color: white;
-		    padding: 10px;
-		    text-align: center;
-		    font-size: 16px;
-		    cursor: pointer;
-			border-style: solid;
-			border-radius: 1em;
-			width: 50%;
-			float: left;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
 
-
-			&:hover {
-				background-color: white;
-				color: grey;
-			}
-		}
-	}
+// Footer .........................................
+footer {
+    height: 50px;
+    margin-top: -50px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: grey;
+    }
 }
